@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta http-equiv="refresh" content="3"/>-->
+		<title></title>
+	</head>
+
+	<body>
+
+	<header>
+		<!--广告-->
+		<!--注意事项：是可以点击跳转链接-->
+		<div class="banner_top">
+			<a href="javascript:;">
+				<img src="images/top_banner.png" />
+			</a>
+		</div>
+		<!--ok-->
+
+
+
+
+
+		<!--黑色导航条-->
+		<div class="nav_black">
+			<!--黑背景-->
+			<div class="nav_list">
+				<!--红背景-->
+				<!--左侧列表-->
+				<ul class="nav_list_left">
+					<li class="list1">
+						<a href="javascript:;">小米商城</a>
+					</li>
+					<li>
+						<a href="javascript:;">MIUI</a>
+					</li>
+					<li>
+						<a href="javascript:;">米聊</a>
+					</li>
+					<li>
+						<a href="javascript:;">游戏</a>
+					</li>
+					<li>
+						<a href="javascript:;">多看阅读</a>
+					</li>
+					<li>
+						<a href="javascript:;">云服务</a>
+					</li>
+					<li>
+						<a href="javascript:;">金融</a>
+					</li>
+					<li>
+						<a href="javascript:;">小米商城移动版</a>
+					</li>
+					<li>
+						<a href="javascript:;">问题反馈</a>
+					</li>
+					<li class="list2">
+						<a href="javascript:;">abcdefg</a>
+					</li>
+				</ul>
+
+				<!--右侧列表-->
+				<div class="nav_list_right">
+					<!--用户登录页-->
+					<ul class="user">
+						<li class="login">
+							<a href="javascript:;">登录</a>
+						</li>
+						<li class="regsiter">
+							<a href="javascript:;">注册</a>
+						</li>
+						<li class="xinxi">
+							<a href="javascript:;">消息通知</a>
+						</li>
+					</ul>
+					<!--购物车-->
+					<div class="car" id="car">
+						<p class="click">购物车</p>
+						<div class="car_1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--ok-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--白色导航条-->
+		<div class="wieth clear">
+			<div class="tab" id="tab">
+
+				<div class="subnav float_left clear">
+					<!--logo标-->
+					<div class="float_left logo_1">
+						<h1 class="subnav_in float_left">
+							<img src="images/milogo.jpg"/>
+						</h1>
+						<div class="subnav_in float_left gif_1">
+							<img src="images/xioami_1.jpg" />
+						</div>
+					</div>
+
+
+					<ul class="float_left subnav_ul">
+						<li class="active">
+							<a href="javascript:;">小米手机</a>
+						</li>
+						<li>
+							<a href="javascript:;"> 红米</a>
+						</li>
+						<li>
+							<a href="javascript:;"> 平板</a>
+						</li>
+						<li>
+							<a href="javascript:;"> 电视&nbsp;.&nbsp;盒子</a>
+						</li>
+						<li>
+							<a href="javascript:;"> 路由器</a>
+						</li>
+						<li>
+							<a href="javascript:;"> 智能硬件</a>
+						</li>
+						<li>
+							<a href="javascript:;"> 服务</a>
+						</li>
+						<li>
+							<a href="javascript:;"> 社区</a>
+						</li>
+					</ul>
+
+
+
+					<div class="float_left search">
+						<input type="search" name="" id="" value="" />
+					</div>
+
+				</div>
+				<dl class="subnav_dl clear">
+					<dd class="show">小米手机</dd>
+					<dd>红米</dd>
+					<dd>平板</dd>
+					<dd>电视&nbsp;.&nbsp;盒子</dd>
+					<dd>路由器</dd>
+					<dd>智能硬件</dd>
+					<dd>服务</dd>
+					<dd>社区</dd>
+				</dl>
+
+
+			</div>
+		</div>
+		<script type="text/javascript">
+			var tab = document.getElementById("tab");
+			var ul = document.getElementsByTagName("ul")[0];
+			var dl = document.getElementsByTagName("dl")[0];
+			
+			var oLi1 = tab.getElementsByTagName("li");
+			var oDd = tab.getElementsByTagName("dd");
+		
+//		dl.style.display = "block";
+		for (var i=0;i<oLi1.length;i++){
+		    oLi1[i].index = i;
+		    oLi1[i].onmousemove = function () {
+                dl.style.display = "block";
+
+				for (var i=0;i<oLi1.length;i++){
+				    oLi1[i].className = null;
+				    oDd[i].className = null;
+				}
+				this.className = "active";
+				oDd[this.index].className = "show";
+            }
+            ul.onmousemove = function () {
+                dl.style.display = "block";
+            };
+
+            ul.onmouseleave = function () {
+                dl.style.display = "none";
+            };
+            dl.onmousemove = function () {
+            	console.log("11111111111")
+                dl.style.display = "block";
+            };
+
+            dl.onmouseleave = function () {
+                dl.style.display = "none";
+            };
+		}
+		</script>
+		<!--ok-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</header>
+
+	<!--轮播区-->
+	<div class="banner margin clearfix">
+		<div class="bannerBottom">
+			<div id="lunbo" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target = "#lunbo" data-slide-to = "0" class="active"></li>
+					<li data-target = "#lunbo" data-slide-to = "1"></li>
+					<li data-target = "#lunbo" data-slide-to = "2" ></li>
+					<li data-target = "#lunbo" data-slide-to = "3" ></li>
+					<li data-target = "#lunbo" data-slide-to = "4"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/T1hiDvBvVv1RXrhCrK.jpg"/>
+					</div>
+
+					<div class="item">
+						<img src="images/T1jrxjB_VT1RXrhCrK.jpg"/>
+					</div>
+
+					<div class="item">
+						<img src="images/T1oTJjBKKT1RXrhCrK.jpg"/>
+					</div>
+
+					<div class="item ">
+						<img src="images/T1RICjB7DT1RXrhCrK.jpg"/>
+					</div>
+
+					<div class="item">
+						<img src="images/T1vWdTBKDv1RXrhCrK.jpg"/>
+					</div>
+					<a href="#lunbo" data-slide="prev" class="carousel-control left">&lt;</a>
+					<a href="#lunbo" data-slide="next" class="carousel-control right">&gt;</a>
+				</div>
+			</div>
+		</div>
+		<!--<div>-->
+		<ul class="bannerTop" id="ul">
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+			<li>
+				<a href="javascript:;"> <span>手机  电话</span><span>&gt;</span>	</a>
+			</li>
+		</ul>
+		<div class="left2" id="div1">
+			<ol>
+				<li class="show">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+			</ol>
+		</div>
+		<!--</div>-->
+	</div>
+
+	<script>
+		var oUl = document.getElementById("ul");
+		var oDiv = document.getElementById("div1");
+
+		var aliT = oUl.getElementsByTagName("li");
+		var aliB = oDiv.getElementsByTagName("li");
+        oDiv.style.display = "none";
+		for (var i=0;i<aliT.length;i++){
+		    aliT[i].index = i;
+
+		    aliT[i].onmousemove = function () {
+
+                oDiv.style.display = "block";
+
+				for (var i=0;i<aliT.length;i++){
+				    aliB[i].className = null;
+				    aliT[i].className = null;
+				}
+				this.className = "active";
+				aliB[this.index].className = "show";
+            }
+            oDiv.onmousemove = function () {
+                oDiv.style.display = "block";
+            };
+
+            oDiv.onmouseout = function () {
+                oDiv.style.display = "none";
+            };
+            oUl.onmousemove = function () {
+                oDiv.style.display = "block";
+            };
+
+            oUl.onmouseout = function () {
+                oDiv.style.display = "none";
+            };
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--家电-->
+		<div class="margin">
+			<div class="jiadian width">
+				<div class="jia1">
+					<h2>家电</h2>
+					<ul>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="jia2 width">
+					<!--左侧-->
+					<div class="jia2Left float1">
+						<img src="images/wp_63.png" />
+					</div>
+					<!--右侧-->
+					<div class="jia2Right float">
+						<ul class="jia2RightTop">
+							<li>
+								<div><img src="images/wp_66.png" /></div>
+								
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_66.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_66.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_66.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+						</ul>
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_66.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_66.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_66.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li class="two">
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--智能-->
+		<div class="margin">
+			<div class="jiadian width">
+				<div class="jia1">
+					<h2>智能</h2>
+					<ul>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="jia2 width">
+					<!--左侧-->
+					<div class="jia2Left float1">
+						<div class="imgTwo">
+							<img src="images/wp_101.png" />
+						</div>
+						<div class="imgTwo">
+							<img src="images/wp_101.png" />
+						</div>
+					</div>
+					<!--右侧-->
+					<div class="jia2Right float">
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_86.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li class="position">
+								<p class="green">新品</p>
+								<img src="images/wp_86.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_86.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_86.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+						</ul>
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_86.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_86.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_86.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li class="two">
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--搭配-->
+		<div class="margin">
+			<div class="jiadian width">
+				<div class="jia1">
+					<h2>搭配</h2>
+					<ul>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="jia2 width">
+					<!--左侧-->
+					<div class="jia2Left float1">
+						<div class="imgTwo">
+							<img src="images/wp_134.png" />
+						</div>
+						<div class="imgTwo">
+							<img src="images/wp_134.png" />
+						</div>
+					</div>
+					<!--右侧-->
+					<div class="jia2Right float">
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_136.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_136.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_136.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_136.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+						</ul>
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_136.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_136.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_136.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li class="two">
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--配件-->
+		<div class="margin">
+			<div class="jiadian width">
+				<div class="jia1">
+					<h2>配件</h2>
+					<ul>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="jia2 width">
+					<!--左侧-->
+					<div class="jia2Left float1">
+						<div class="imgTwo">
+							<img src="images/wp_173.png" />
+						</div>
+						<div class="imgTwo">
+							<img src="images/wp_173.png" />
+						</div>
+					</div>
+					<!--右侧-->
+					<div class="jia2Right float">
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_176.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li class="position">
+								<p class="green">新品</p>
+								<img src="images/wp_176.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_176.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_176.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+						</ul>
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_176.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_176.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_176.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li class="two">
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--周边-->
+		<div class="margin">
+			<div class="jiadian width">
+				<div class="jia1">
+					<h2>周边</h2>
+					<ul>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+						<li>热门</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				<div class="jia2 width">
+					<!--左侧-->
+					<div class="jia2Left float1">
+						<div class="imgTwo">
+							<img src="images/wp_210.png" />
+						</div>
+						<div class="imgTwo">
+							<img src="images/wp_210.png" />
+						</div>
+					</div>
+					<!--右侧-->
+					<div class="jia2Right float">
+						<ul class="jia2RightTop small">
+							<li>
+								<img src="images/wp_197.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_197.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_197.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_197.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+						</ul>
+						<ul class="jia2RightTop">
+							<li>
+								<img src="images/wp_197.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_197.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li>
+								<img src="images/wp_197.png" />
+								<p>红米Note 4x</p>
+								<small>4100mAh超长续航多彩金属</small>
+								<p class="red">999元起</p>
+							</li>
+							<li class="two">
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								<div class="twodiv">
+									<div class="twodiv1">
+										<p>米加扫地机</p>
+										<p class="red">1699元</p>
+									</div>
+									<img src="images/wp_96.png" />
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--为你推荐-->
+		<div class="images width">
+			<div class="imagesTop">
+				<h2>为你推荐</h2>
+				<div> <span>&lt;</span><span>&gt;</span> </div>
+			</div>
+			<div class="images2 small">
+				<ul>
+					<li>
+						<img src="images/wp_246.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_246.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_246.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_246.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_246.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<!--热评产品-->
+		<div class="images width">
+			<div class="imagesTop">
+				<h2>热评产品</h2>
+				<!--<div> <span>&lt;</span><span>&gt;</span> </div>-->
+			</div>
+			<div class="images1 scale2">
+				<ul>
+					<li>
+						<img src="images/wp_270.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_270.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_270.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_270.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!--内容-->
+		<div class="images width">
+			<div class="imagesTop">
+				<h2>内容</h2>
+				<!--<div> <span>&lt;</span><span>&gt;</span> </div>-->
+			</div>
+			<div class="images1 scale2">
+				<ul>
+					<li>
+						<img src="images/wp_277.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_277.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_277.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_277.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!--视频-->
+		<div class="images width">
+			<div class="imagesTop">
+				<h2>视频</h2>
+				<div> <span>&lt;</span><span>&gt;</span> </div>
+			</div>
+			<div class="images1">
+				<ul>
+					<li class="position">
+						<img src="images/bo.jpg" class="bo"/>
+						<img src="images/wp_298.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_298.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li>
+						<img src="images/wp_298.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+					<li class="position">
+						<img src="images/bo.jpg" class="bo"/>
+						<img src="images/wp_298.png" />
+						<p>红米Note 4x</p>
+						<small>4100mAh超长续航多彩金属</small>
+						<p class="red">999元起</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<!--结尾-->
+		<div class="footer margin">
+			<ul class="footerTop width">
+				<li>
+					<img src="images/wp_312.png" />
+				</li>
+				<li>
+					<img src="images/wp_312.png" />
+				</li>
+				<li>
+					<img src="images/wp_312.png" />
+				</li>
+				<li>
+					<img src="images/wp_312.png" />
+				</li>
+		</ul>
+			<div class="footerBottom width">
+				<div class="footerBottomLeft width">
+					<dl>
+						<dt>帮助中心1</dt>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+					</dl>
+					<dl>
+						<dt>帮助中心2</dt>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+					</dl>
+					<dl>
+						<dt>帮助中心3</dt>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+					</dl>
+					<dl>
+						<dt>帮助中心4</dt>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+					</dl>
+					<dl>
+						<dt>帮助中心5</dt>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+					</dl>
+					<dl>
+						<dt>帮助中心6</dt>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+						<dd>账户管理</dd>
+					</dl>
+				</div>
+				<div class="footerBottomRight">
+					<h2 class="red">小米客服</h2>
+					<p>7x24小时全天陪伴</p>
+					<p>为你解决问题</p>
+					<a href="$" class="red a">立即开始咨询</a>
+				</div>
+			</div>
+
+			<ul class="width footer0">
+				<li class="li1">
+					<img src="images/wp_07.png" />
+				</li>
+				<li class="li2">
+					<p>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+						<span>小米商城</span>
+					</p>
+					<p class="grey">工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理工商管理</p>
+				</li>
+				<li class="li3">
+					<ol class="ol1">
+						<li>
+							<img src="images/wp_333.png" />
+						</li>
+						<li>
+							<img src="images/wp_333.png" />
+						</li>
+						<li>
+							<img src="images/wp_333.png" />
+						</li>
+						<li>
+							<img src="images/wp_333.png" />
+						</li>
+					</ol>
+				</li>
+			</ul>
+			</div>
+
+	</body>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/xiaomi.css" />
+	<link rel="stylesheet" href="minjs/bootstrap.min.css">
+	<script src="minjs/jquery.min.js"></script>
+	<script src="minjs/bootstrap.min.js"></script>
+	<script>
+        $(function () {
+            $("#car").mouseenter(function () {
+                $("#car .car_1").show();
+            }).mouseleave(function () {
+                $("#car .car_1").hide();
+            })
+            });
+	</script>
+</html>
